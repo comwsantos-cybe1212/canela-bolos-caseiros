@@ -372,7 +372,7 @@
         color: var(--goldl);
       }
       dialog {
-        margin:auto;
+        margin: auto;
         border: 0;
         padding: 0;
         background: var(--cream);
@@ -395,7 +395,6 @@
           transform: scale(0.96);
         }
       }
-
 
       .mb {
         display: grid;
@@ -454,13 +453,42 @@
         cursor: pointer;
         z-index: 2;
       }
+      @media (max-width: 759px) {
+        dialog {
+          width: min(400px, 92vw);
+          overflow: hidden;
+        }
+        .mb {
+          display: flex;
+          flex-direction: column;
+          max-height: 92vh;
+          max-height: 92dvh;
+        }
+        .mb img {
+          flex: 1 1 auto;
+          min-height: 0;
+          max-height: none;
+          height: auto;
+        }
+        .mt {
+          flex: 0 0 auto;
+          padding: 16px 18px 20px;
+          gap: 8px;
+        }
+        .mt h3 {
+          font-size: 1.3rem;
+        }
+        .mt p {
+          font-size: 0.95rem;
+          line-height: 1.35;
+        }
+      }
 
-      .separacao{
+      .separacao {
         height: 1px;
         width: 100%;
         background-color: var(--gold);
       }
-
     </style>
   </head>
   <body>
@@ -577,7 +605,7 @@
         <div class="orn"><i></i></div>
         <p class="hint">Toque na foto para ver o bolo inteiro</p>
         <div class="grid">
-          <button 
+          <button
             class="card"
             data-n="Cenoura com brigadeiro"
             data-c="Bolo"
@@ -836,9 +864,7 @@
       </div>
     </section>
 
-    <div class="separacao">
-
-    </div>
+    <div class="separacao"></div>
 
     <footer class="dk fin">
       <div class="wrap">
